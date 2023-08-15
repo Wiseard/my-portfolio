@@ -1,0 +1,70 @@
+.about-container {
+  height: 100%;
+  margin-left: 4rem;
+  overflow: scroll;
+}
+.about-container > * {
+  color: var(--bg-beige);
+}
+
+.about-title {
+  font-family: var(--font-family-project);
+  font-size: 11vw;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 1.765rem;
+  padding-left: 1rem;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.show-about-title {
+  animation: 0.8s 0.8s ease-in scaleup forwards;
+}
+
+.about-content > * {
+  font-family: var(--font-family-project);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 0 1rem;
+}
+
+.about-content > p {
+  line-height: 1.6;
+  margin-bottom: 0.765rem;
+}
+
+.about-content > p:last-child {
+  font-weight: 400;
+}
+
+.about-content blockquote {
+  margin: 1.765rem 0;
+  background-color: var(--bg-beige);
+  padding: 0.5rem;
+}
+
+.about-content blockquote > * {
+  font-family: var(--font-family);
+  font-family: var(--font-family-nav);
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.about-content blockquote > p {
+  font-size: 3.7vw;
+  line-height: 1.2;
+}
+
+.about-content blockquote > footer {
+  font-size: 1.7vw;
+  text-align: right;
+  margin-top: 0.765rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 850px) {
+  .about-container {
+    margin-left: 0rem;
+  }
+}

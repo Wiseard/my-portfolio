@@ -1,0 +1,32 @@
+nav.navbar-arrow {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 1.5rem 0;
+  right: 0;
+  top: 0;
+  width: fit-content;
+  z-index: 1;
+}
+
+/* arrow icon */
+
+.arrow-up-icon {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--bg-beige);
+  margin-right: 1.765rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+  animation: 0.8s linear infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}

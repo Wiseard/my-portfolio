@@ -1,0 +1,175 @@
+.contact-container {
+  position: relative;
+  background-color: var(--color-black);
+  height: 100%;
+  margin-left: 4rem;
+  padding-bottom: 1rem;
+  overflow: scroll;
+}
+
+.contact-container > * {
+  color: var(--bg-beige);
+  font-family: var(--font-family-project);
+}
+
+.contact-title {
+  font-family: var(--font-family-project);
+  font-size: 11vw;
+  padding-left: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.show-contact-title {
+  animation: 0.8s 0.8s ease-in scaleup forwards;
+}
+
+.contact {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.765rem;
+  /* height: 100%; */
+}
+
+.contact-content {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.765rem;
+}
+.contact-content p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.contact-content a {
+  color: var(--bg-beige);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-content a:hover {
+  text-decoration: line-through;
+}
+
+/* FORM */
+
+.contact-form-container h3 {
+  text-align: center;
+  margin-top: 1.765rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.765rem;
+  margin-top: 1.765rem;
+  /* min-width: 300px; */
+}
+
+input[name='user_name'],
+input[name='user_email'],
+input[name='message'] {
+  display: block;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid var(--bg-beige);
+  color: var(--bg-beige);
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+}
+
+.btn-contact-submit {
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: var(--bg-beige);
+  border: 1px solid var(--bg-beige);
+  color: var(--color-black);
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-contact-submit:hover {
+  background-color: var(--color-black);
+  color: var(--bg-beige);
+}
+
+input#name::placeholder,
+input#email::placeholder,
+input#message::placeholder {
+  color: var(--bg-beige);
+}
+
+.form-message-confirmation {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 0.765rem;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.show-form-message-confirmation {
+  animation: 0.8s ease-in scaleup forwards;
+}
+
+.form-message-confirmation p {
+  font-size: 0.8rem;
+}
+
+.form-message-confirmation p:nth-child(1) {
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+/* CONTACT RESPONSIVE */
+
+@media screen and (max-width: 1150px) {
+  .contact {
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+  }
+
+  .contact-content {
+    align-self: start;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .contact-container {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    justify-content: center;
+  }
+
+  .contact-title {
+    margin-bottom: 0.765rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form {
+    margin-top: 0.765rem;
+  }
+
+  input[name='user_name'],
+  input[name='user_email'],
+  input[name='message'],
+  .btn-contact-submit {
+    width: 80%;
+    min-width: unset;
+  }
+  .form-message-confirmation {
+    width: 80%;
+    min-width: unset;
+  }
+}
