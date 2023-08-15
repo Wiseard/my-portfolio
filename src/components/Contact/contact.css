@@ -134,6 +134,7 @@ input#message::placeholder {
   .contact {
     grid-template-columns: 1fr;
     column-gap: 0rem;
+    row-gap: 2.765rem;
   }
 
   .contact-content {
