@@ -10,8 +10,9 @@ const About = () => {
       </h2>
       <div className="about-content">
         <p>
-          My name is Florent and I am a self-taught front-end developer who
-          enjoy building web applications for 2 years now.
+          {/* My name is Florent and I am a self-taught front-end developer who
+          enjoy building web applications for 2 years now. */}
+          I'm Florent. A front-end developer and problem solver.
         </p>
         <p>
           As a Digital Marketing graduate , web development has always been part

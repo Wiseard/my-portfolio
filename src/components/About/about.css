@@ -24,7 +24,7 @@
 
 .about-content > * {
   font-family: var(--font-family-project);
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   padding: 0 1rem;
 }
@@ -32,6 +32,14 @@
 .about-content > p {
   line-height: 1.6;
   margin-bottom: 0.765rem;
+}
+
+.about-content > p:first-child {
+  font-family: var(--font-family-nav);
+  font-size: 3.7vw;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  margin-bottom: 1.765rem;
 }
 
 .about-content > p:last-child {
@@ -54,6 +62,7 @@
 .about-content blockquote > p {
   font-size: 3.7vw;
   line-height: 1.2;
+  letter-spacing: 0px;
 }
 
 .about-content blockquote > footer {
@@ -74,8 +83,13 @@
     font-size: 1.3rem;
   }
 
+  .about-content > p:first-child {
+    /* font-size: 6.5vw; */
+    font-size: 8vw;
+  }
+
   .about-content blockquote > p {
-    font-size: 6.5vw;
+    font-size: 8vw;
   }
 
   .about-content blockquote > footer {
