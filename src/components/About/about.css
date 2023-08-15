@@ -68,3 +68,17 @@
     margin-left: 0rem;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .about-content > * {
+    font-size: 1.3rem;
+  }
+
+  .about-content blockquote > p {
+    font-size: 6.5vw;
+  }
+
+  .about-content blockquote > footer {
+    font-size: 4vw;
+  }
+}

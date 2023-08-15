@@ -120,7 +120,7 @@ input#message::placeholder {
 }
 
 .form-message-confirmation p {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .form-message-confirmation p:nth-child(1) {
@@ -155,6 +155,10 @@ input#message::placeholder {
   .contact-title {
     margin-bottom: 0.765rem;
     padding: 0 1rem;
+  }
+
+  .contact-content p {
+    font-size: 1.3rem;
   }
 
   .contact-form {
